@@ -46,3 +46,38 @@ def evaluate_trust(request: TrustEvaluationRequest):
 @router.get("/events")
 def get_governance_events():
     return EventStore.get_events()
+
+@router.get("/metrics")
+def get_runtime_metrics():
+
+    events = EventStore.get_events()
+
+    total_events = len(events)
+
+    escalated_events = len([
+        e for e in events
+        if e.runtime_state == "ESCALATED"
+    ])
+
+    blocked_events = len([
+        e for e in events
+        if e.runtime_state == "BLOCKED"
+    ])
+
+    monitored_events = len([
+        e for e in events
+        if e.runtime_state == "MONITORED"
+    ])
+
+    restricted_events = len([
+        e for e in events
+        if e.runtime_state == "RESTRICTED"
+    ])
+
+    return {
+        "total_events": total_events,
+        "escalated_events": escalated_events,
+        "blocked_events": blocked_events,
+        "monitored_events": monitored_events,
+        "restricted_events": restricted_events
+    }
