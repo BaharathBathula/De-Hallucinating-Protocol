@@ -1,2 +1,3 @@
-# De-Hallucinating-Protocol
-Runtime Trust &amp; Governance Framework for Enterprise AI Systems
+# De-Hallucinating Protocol
+
+Runtime Trust & Governance Framework for Enterprise AI Systems
