@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 from src.trust_engine.services.trust_service import TrustService
 from src.governance_events.services.event_service import EventService
+from src.governance_events.services.event_store import EventStore
 
 
 router = APIRouter(prefix="/trust", tags=["Runtime Trust Engine"])
@@ -34,6 +35,8 @@ def evaluate_trust(request: TrustEvaluationRequest):
         escalation_required=trust_result.escalation_required,
         governance_actions=trust_result.governance_actions,
     )
+
+    EventStore.add_event(governance_event)
 
     return {
         "trust_evaluation": trust_result,
