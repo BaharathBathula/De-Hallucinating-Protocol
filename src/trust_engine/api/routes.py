@@ -42,3 +42,7 @@ def evaluate_trust(request: TrustEvaluationRequest):
         "trust_evaluation": trust_result,
         "governance_event": governance_event
     }
+
+@router.get("/events")
+def get_governance_events():
+    return EventStore.get_events()
