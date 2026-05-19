@@ -94,6 +94,58 @@ This repository contains:
 
 ---
 
+## System Architecture
+
+See:
+
+- docs/architecture/system-architecture.md
+- docs/architecture/runtime-sequence-flow.md
+- docs/architecture/trust-flow-architecture.md
+- docs/architecture/escalation-flow.md
+
+---
+
+## Runtime Infrastructure
+
+Current runtime governance components include:
+
+- Runtime Trust Engine
+- Policy Engine
+- Escalation Engine
+- Audit Engine
+- Observability Engine
+
+---
+
+## Governance Runtime API
+
+The framework currently exposes:
+
+```http
+POST /trust/evaluate
+```
+
+This endpoint provides:
+
+- runtime trust scoring
+- governance state classification
+- escalation evaluation
+- governance action enforcement
+
+---
+
+## Simulations
+
+Current governance simulations include:
+
+- policy fabrication containment
+- escalation activation
+- runtime trust degradation
+- operational governance restriction
+
+---
+
 ## Status
 
-Early-stage research and architecture development.
+Active governance runtime prototype development.
+
