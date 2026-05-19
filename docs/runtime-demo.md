@@ -29,7 +29,7 @@ POST /trust/evaluate
 
 See:
 
-- assets/screenshots/runtime-request-example.png
+- <img width="1819" height="739" alt="assetsscreenshotsswagger-runtime-api" src="https://github.com/user-attachments/assets/68ad5eb9-1a29-47c7-8125-f4bfd45f846c" />
 
 ---
 
@@ -37,7 +37,8 @@ See:
 
 See:
 
-- assets/screenshots/runtime-response-example.png
+- <img width="1400" height="626" alt="assetsscreenshotsruntime-response-example" src="https://github.com/user-attachments/assets/a7c38840-3d5c-4681-b99d-d589924b6aea" />
+
 
 ---
 
