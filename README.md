@@ -5,6 +5,7 @@ Runtime Trust & Governance Framework for Enterprise AI Systems
 ---
 
 ## Overview
+<img width="1374" height="2610" alt="assetsdiagramsgovernance-runtime-architecture" src="https://github.com/user-attachments/assets/53147f17-7082-4b8c-85ae-3ddda8689b4c" />
 
 De-Hallucinating Protocol is a governance-first framework designed to improve trust, auditability, and runtime reliability in enterprise AI systems operating within regulated environments.
 
